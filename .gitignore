@@ -125,6 +125,9 @@ tmp/
 cache/
 
 # Project-specific
-em_agent/chroma_visual_db/
-em_agent/data/
-em_agent/logs/
+deduplication_agent/chroma_visual_db/
+deduplication_agent/data/
+deduplication_agent/logs/
+deduplication_agent/frames_storage
+deduplication_agent/pipeline_v1.py
+deduplication_agent/pipeline_v2.py
