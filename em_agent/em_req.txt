@@ -1,0 +1,19 @@
+# Core dependencies
+opencv-python>=4.8.0
+pillow>=10.0.0
+numpy>=1.24.0
+
+# Hashing and similarity
+imagehash>=4.3.1
+
+# Vector database
+chromadb>=0.4.0
+
+# Embedding model
+sentence-transformers>=2.2.0
+torch>=2.0.0
+
+# Note: ffmpeg must be installed separately on your system
+# Ubuntu/Debian: sudo apt-get install ffmpeg
+# macOS: brew install ffmpeg
+# Windows: Download from https://ffmpeg.org/download.html
