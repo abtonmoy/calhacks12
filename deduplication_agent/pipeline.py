@@ -310,7 +310,7 @@ class SimilarityDetectionAgent:
         
         # Initialize embedding model
         print(f"Loading embedding model: {embedding_model}")
-        self.model = SentenceTransformer(embedding_model)
+        self.model = SentenceTransformer(embedding_model, device='cpu')
         print("Model loaded successfully")
     
     def compute_embedding(self, frame: np.ndarray) -> np.ndarray:

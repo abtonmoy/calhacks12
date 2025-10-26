@@ -10,3 +10,12 @@ transformers
 # API server dependencies
 flask
 flask-cors
+# Video orchestrator dependencies
+anthropic
+python-dotenv
+pillow
+chromadb
+sentence-transformers
+imagehash
+# Image orchestrator dependencies
+easyocr

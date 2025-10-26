@@ -52,6 +52,7 @@ python3 findHuman_agent/human_detector.py image.jpg
 ```
 
 Output:
+
 ```json
 {
   "human_present": 1,
@@ -66,12 +67,13 @@ python3 audio_processing/audio_processor.py video.mp4
 ```
 
 Output:
+
 ```json
 {
   "duration_sec": 15.03,
   "gender_estimation": "female",
   "mean_pitch": 226.96,
-  "spectral_bandwidth": 2021.30,
+  "spectral_bandwidth": 2021.3,
   "emotion": "happy"
 }
 ```

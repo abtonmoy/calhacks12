@@ -20,6 +20,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'audio_processing'))
 
 from human_detector import SimpleHumanDetector
 import audio_processor
+from video_orc_agent_main import EnhancedVisionOrchestrator
+from img_orc_agent import ImageFeatureExtractor
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for React frontend on localhost:3000
@@ -35,6 +37,26 @@ os.makedirs('audio_temp', exist_ok=True)
 
 # Initialize detector
 detector = SimpleHumanDetector()
+
+# Lazy initialization of orchestrators (expensive to load)
+video_orchestrator = None
+image_extractor = None
+
+def get_video_orchestrator():
+    """Lazy-load video orchestrator to avoid loading on startup"""
+    global video_orchestrator
+    if video_orchestrator is None:
+        print("Loading video orchestrator (first time only)...")
+        video_orchestrator = EnhancedVisionOrchestrator()
+    return video_orchestrator
+
+def get_image_extractor():
+    """Lazy-load image feature extractor to avoid loading on startup"""
+    global image_extractor
+    if image_extractor is None:
+        print("Loading image feature extractor (first time only)...")
+        image_extractor = ImageFeatureExtractor()
+    return image_extractor
 
 
 def allowed_file(filename, allowed_extensions):
@@ -175,13 +197,122 @@ def analyze_audio():
         return jsonify(error_response), 500
 
 
+@app.route('/api/analyze-video', methods=['POST'])
+def analyze_video():
+    """Analyze video using the video orchestration agent"""
+    try:
+        # Check if file is in request
+        if 'file' not in request.files:
+            return jsonify({
+                'error': 'No file provided',
+                'success': False
+            }), 400
+        
+        file = request.files['file']
+        
+        # Check if filename is empty
+        if file.filename == '':
+            return jsonify({
+                'error': 'No file selected',
+                'success': False
+            }), 400
+        
+        # Check file extension
+        if not allowed_file(file.filename, ALLOWED_VIDEO_EXTENSIONS):
+            return jsonify({
+                'error': 'Invalid file type. Only videos (mp4, avi, mov, mkv, webm) are allowed',
+                'success': False
+            }), 400
+        
+        # Save uploaded file
+        filename = secure_filename(file.filename)
+        filepath = os.path.join(UPLOAD_FOLDER, filename)
+        file.save(filepath)
+        
+        # Get orchestrator (lazy-loaded, cached)
+        orchestrator = get_video_orchestrator()
+        
+        # Process video (returns full analysis)
+        result = orchestrator.process(filepath)
+        
+        # Clean up uploaded file
+        if os.path.exists(filepath):
+            os.remove(filepath)
+        
+        # Return the result
+        return jsonify(result), 200
+        
+    except Exception as e:
+        error_response = {
+            'error': str(e),
+            'success': False
+        }
+        return jsonify(error_response), 500
+
+
+@app.route('/api/analyze-image', methods=['POST'])
+def analyze_image():
+    """Analyze image using the image orchestration agent"""
+    try:
+        # Check if file is in request
+        if 'file' not in request.files:
+            return jsonify({
+                'error': 'No file provided',
+                'success': False
+            }), 400
+        
+        file = request.files['file']
+        
+        # Check if filename is empty
+        if file.filename == '':
+            return jsonify({
+                'error': 'No file selected',
+                'success': False
+            }), 400
+        
+        # Check file extension
+        if not allowed_file(file.filename, ALLOWED_IMAGE_EXTENSIONS):
+            return jsonify({
+                'error': 'Invalid file type. Only images (png, jpg, jpeg, gif, bmp) are allowed',
+                'success': False
+            }), 400
+        
+        # Save uploaded file
+        filename = secure_filename(file.filename)
+        filepath = os.path.join(UPLOAD_FOLDER, filename)
+        file.save(filepath)
+        
+        # Get image extractor (lazy-loaded, cached)
+        extractor = get_image_extractor()
+        
+        # Process image (returns full analysis)
+        result = extractor.process_image(filepath)
+        
+        # Clean up uploaded file
+        if os.path.exists(filepath):
+            os.remove(filepath)
+        
+        # Return the result
+        return jsonify(result), 200
+        
+    except Exception as e:
+        error_response = {
+            'error': str(e),
+            'success': False
+        }
+        return jsonify(error_response), 500
+
+
 if __name__ == '__main__':
     print("Starting API server...")
     print("API endpoints:")
-    print("  - POST /api/detect-human (upload image)")
-    print("  - POST /api/analyze-audio (upload video)")
+    print("  - POST /api/detect-human (upload image - simple detection)")
+    print("  - POST /api/analyze-image (upload image - full analysis)")
+    print("  - POST /api/analyze-audio (upload video - audio only)")
+    print("  - POST /api/analyze-video (upload video - full analysis)")
     print("  - GET  /api/health")
-    print("\nServer running on http://localhost:5001")
+    print("\nNote: Orchestrators will load on first request (may take 30-60s)")
+    print("Server running on http://localhost:5001")
     print("React frontend should connect to http://localhost:5001/api")
     
     app.run(debug=True, host='0.0.0.0', port=5001)
