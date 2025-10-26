@@ -1,8 +1,8 @@
 # CalHacks 12
 
-# ADLOVING: Marketing Signal Detection System
+# ADLOVIN Media Inteligence: Marketing Signal Detection System
 
-A comprehensive AI-powered system for extracting marketing signals, promotional content, and brand information from videos and images using computer vision, OCR, audio analysis, and Claude API.
+A comprehensive AI-powered system for extracting marketing signals, promotional content, and brand information from videos and images using similarity search, computer vision, OCR, audio analysis, and Claude API.
 
 ---
 
@@ -33,7 +33,7 @@ This system processes video files and images to extract rich marketing intellige
 
 The system uses a multi-agent architecture combining:
 
-- **Frame deduplication** using visual embeddings
+- **Frame deduplication** using vector embeddings
 - **Human detection** using face detection
 - **Audio processing** with pitch analysis and emotion recognition
 - **OCR** for text extraction (image pipeline)
@@ -281,8 +281,8 @@ ffmpeg -version
 
 ```bash
 # If using git
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/abtonmoy/calhacks12.git
+cd calhacks12
 
 # Or download and extract ZIP
 ```
