@@ -1,0 +1,1900 @@
+{
+  "success": true,
+  "file_info": {
+    "file_path": "data\\videos\\v0005.mp4",
+    "file_name": "v0005.mp4",
+    "file_type": "video",
+    "processed_at": "2025-10-26T04:03:57.990519",
+    "processing_time_seconds": 175.13205
+  },
+  "deduplication": {
+    "total_frames_extracted": 50,
+    "unique_frames_stored": 29,
+    "duplicate_frames_skipped": 21,
+    "skip_ratio": "42.0%"
+  },
+  "analysis": {
+    "frames_analyzed": 29,
+    "frames_with_brands": 8,
+    "frames_with_promos": 0,
+    "total_tokens_used": 41370,
+    "estimated_cost_usd": 0.1241
+  },
+  "consolidated_video_analysis": {
+    "brand_name_text": "Abercrombie & Fitch",
+    "product_name": "clothing/apparel",
+    "industry": "fashion/apparel",
+    "promo_present": false,
+    "promo_text": "none visible",
+    "promo_deadline": "none mentioned",
+    "price_value": "none visible",
+    "cta_present": false,
+    "cta_type": "none present",
+    "text_density": "low",
+    "brand_text_contrast": "low",
+    "visual_elements": [
+      "indoor setting",
+      "motion blur",
+      "casual clothing",
+      "warm lighting",
+      "sneakers",
+      "natural lighting",
+      "two young people",
+      "striped shirt",
+      "baseball cap",
+      "brand logo"
+    ],
+    "color_scheme": "blue, white, neutral tones",
+    "aesthetic_style": "casual, candid, youthful lifestyle photography",
+    "logos_detected": [
+      "Abercrombie & Fitch moose logo",
+      "abercrombie kids",
+      "Abercrombie & Fitch logo with moose icon",
+      "New York Yankees NY logo",
+      "Jordan",
+      "Abercrombie & Fitch",
+      "none clearly visible"
+    ],
+    "narrative_arc": "intro \u2192 lifestyle_showcase \u2192 lifestyle_scene",
+    "_consolidation_meta": {
+      "total_frames_analyzed": 29,
+      "frames_with_brand": 8,
+      "frames_with_product": 12,
+      "frames_with_promo": 0,
+      "frames_with_cta": 0,
+      "unique_brands_detected": 6,
+      "unique_products_detected": 11
+    }
+  },
+  "frames": [
+    {
+      "frame_id": "987e49888e253e17c695b0c94c700ef3",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 0,
+      "timestamp": "2025-10-26T04:03:58.872109",
+      "frame_path": "frames_storage\\987e49888e253e17c695b0c94c700ef3.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "0"
+          },
+          {
+            "similarity": 0.873,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "1"
+          },
+          {
+            "similarity": 0.856,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "9"
+          }
+        ],
+        "visual_change": {
+          "change_detected": false,
+          "change_magnitude": 0.0,
+          "change_type": "first_frame"
+        },
+        "narrative_position": "opening"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "two young people",
+          "blue beanie",
+          "white hoodie with teddy bear graphic",
+          "casual clothing",
+          "indoor setting"
+        ],
+        "color_scheme": "blue, white, neutral tones",
+        "aesthetic_style": "casual, candid, youthful lifestyle photography",
+        "logos_detected": [],
+        "narrative_function": "intro"
+      },
+      "api_tokens_used": 1403
+    },
+    {
+      "frame_id": "f99cb17eec8298fbfac49d2975971315",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 1,
+      "timestamp": "2025-10-26T04:03:59.025536",
+      "frame_path": "frames_storage\\f99cb17eec8298fbfac49d2975971315.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 1.0,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "1"
+          },
+          {
+            "similarity": 0.878,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "3"
+          },
+          {
+            "similarity": 0.878,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "0"
+          }
+        ],
+        "visual_change": {
+          "change_detected": false,
+          "change_magnitude": 0.129,
+          "change_type": "minor_change"
+        },
+        "narrative_position": "opening"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "two children",
+          "girl with long black hair",
+          "boy with blue beanie",
+          "checkered shirt",
+          "white hoodie",
+          "indoor setting",
+          "white wall background"
+        ],
+        "color_scheme": "neutral whites and grays with blue accent",
+        "aesthetic_style": "casual family photography with soft lighting",
+        "logos_detected": [],
+        "narrative_function": "intro"
+      },
+      "api_tokens_used": 1409
+    },
+    {
+      "frame_id": "31b6368bf6e22be829ac337b8a55ac60",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 3,
+      "timestamp": "2025-10-26T04:03:59.179064",
+      "frame_path": "frames_storage\\31b6368bf6e22be829ac337b8a55ac60.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "3"
+          },
+          {
+            "similarity": 0.878,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "1"
+          },
+          {
+            "similarity": 0.872,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "9"
+          }
+        ],
+        "visual_change": {
+          "change_detected": false,
+          "change_magnitude": 0.122,
+          "change_type": "minor_change"
+        },
+        "narrative_position": "opening"
+      },
+      "marketing_signals": {
+        "brand_name_text": "not visible",
+        "product_name": "not clearly identifiable",
+        "industry": "fashion/lifestyle",
+        "promo_present": false,
+        "promo_text": "none visible",
+        "promo_deadline": "none mentioned",
+        "price_value": "none visible",
+        "cta_present": false,
+        "cta_type": "none present",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "two young people",
+          "burgundy baseball cap",
+          "casual clothing",
+          "striped shirt",
+          "black beanie",
+          "motion blur"
+        ],
+        "color_scheme": "burgundy, white, black, neutral tones",
+        "aesthetic_style": "casual youth lifestyle, slightly blurred/candid photography",
+        "logos_detected": [
+          "none clearly visible"
+        ],
+        "narrative_function": "intro/lifestyle establishment"
+      },
+      "api_tokens_used": 1439
+    },
+    {
+      "frame_id": "ce5820225d25264c1ad5a37f96ee06f8",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 4,
+      "timestamp": "2025-10-26T04:03:59.257733",
+      "frame_path": "frames_storage\\ce5820225d25264c1ad5a37f96ee06f8.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "4"
+          },
+          {
+            "similarity": 0.815,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "23"
+          },
+          {
+            "similarity": 0.784,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "31"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.235,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "opening"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "healthcare/medical",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "medical professionals",
+          "blue scrubs",
+          "white coat",
+          "healthcare uniforms",
+          "medical staff",
+          "hospital corridor"
+        ],
+        "color_scheme": "blue and white",
+        "aesthetic_style": "clinical, professional medical environment",
+        "logos_detected": [],
+        "narrative_function": "intro/scene_setting"
+      },
+      "api_tokens_used": 1407
+    },
+    {
+      "frame_id": "92dce67b7cfc9a5b1581a3e04f3d3ac7",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 7,
+      "timestamp": "2025-10-26T04:03:59.484682",
+      "frame_path": "frames_storage\\92dce67b7cfc9a5b1581a3e04f3d3ac7.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "7"
+          },
+          {
+            "similarity": 0.724,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "4"
+          },
+          {
+            "similarity": 0.711,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "24"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.274,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "early_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "gradient background",
+          "abstract color transition",
+          "soft blur effects"
+        ],
+        "color_scheme": "cream to red gradient",
+        "aesthetic_style": "minimalist abstract gradient with soft transitions",
+        "logos_detected": [],
+        "narrative_function": "intro"
+      },
+      "api_tokens_used": 1392
+    },
+    {
+      "frame_id": "bd71e1e6ae563c217db28df0490821de",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 8,
+      "timestamp": "2025-10-26T04:03:59.577935",
+      "frame_path": "frames_storage\\bd71e1e6ae563c217db28df0490821de.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "8"
+          },
+          {
+            "similarity": 0.822,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "9"
+          },
+          {
+            "similarity": 0.774,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "3"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.415,
+          "change_type": "major_scene_change"
+        },
+        "narrative_position": "early_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "three young women",
+          "casual clothing",
+          "baseball cap",
+          "striped shirt",
+          "indoor setting",
+          "laughing/smiling expressions"
+        ],
+        "color_scheme": "muted tones with blue and burgundy accents",
+        "aesthetic_style": "candid lifestyle photography with soft focus",
+        "logos_detected": [],
+        "narrative_function": "lifestyle_showcase"
+      },
+      "api_tokens_used": 1419
+    },
+    {
+      "frame_id": "ce18c85214cf9551657ea530ee6145d8",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 9,
+      "timestamp": "2025-10-26T04:03:59.658942",
+      "frame_path": "frames_storage\\ce18c85214cf9551657ea530ee6145d8.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "9"
+          },
+          {
+            "similarity": 0.874,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "3"
+          },
+          {
+            "similarity": 0.856,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "0"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.181,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "early_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": null,
+        "product_name": null,
+        "industry": "lifestyle/social",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "two young women",
+          "baseball cap",
+          "plaid shirt",
+          "white turtleneck",
+          "casual clothing",
+          "indoor setting",
+          "smiling faces",
+          "friendly interaction"
+        ],
+        "color_scheme": "muted blues, burgundy, black, white",
+        "aesthetic_style": "casual lifestyle photography with soft lighting",
+        "logos_detected": [],
+        "narrative_function": "lifestyle_showcase"
+      },
+      "api_tokens_used": 1433
+    },
+    {
+      "frame_id": "bb69a7ec2b3acbc5e1ae9233fa792c25",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 10,
+      "timestamp": "2025-10-26T04:03:59.740904",
+      "frame_path": "frames_storage\\bb69a7ec2b3acbc5e1ae9233fa792c25.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.998,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "10"
+          },
+          {
+            "similarity": 0.847,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "11"
+          },
+          {
+            "similarity": 0.615,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "4"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.465,
+          "change_type": "major_scene_change"
+        },
+        "narrative_position": "early_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": "Abercrombie & Fitch",
+        "product_name": "clothing/apparel",
+        "industry": "fashion/retail",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "medium",
+        "visual_elements": [
+          "white t-shirt",
+          "brand logo",
+          "moose icon",
+          "fabric texture"
+        ],
+        "color_scheme": "white/light gray",
+        "aesthetic_style": "casual minimalist clothing branding",
+        "logos_detected": [
+          "Abercrombie & Fitch moose logo"
+        ],
+        "narrative_function": "product_showcase"
+      },
+      "api_tokens_used": 1436
+    },
+    {
+      "frame_id": "d63d90f582b2f3fefae92d7703f7271c",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 11,
+      "timestamp": "2025-10-26T04:03:59.820473",
+      "frame_path": "frames_storage\\d63d90f582b2f3fefae92d7703f7271c.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.998,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "11"
+          },
+          {
+            "similarity": 0.845,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "10"
+          },
+          {
+            "similarity": 0.596,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "23"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.15,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "early_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": "Abercrombie & Fitch",
+        "product_name": "clothing/apparel",
+        "industry": "fashion/retail",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "medium",
+        "visual_elements": [
+          "clothing garment",
+          "brand logo",
+          "fabric texture",
+          "embroidered text"
+        ],
+        "color_scheme": "light green/sage",
+        "aesthetic_style": "casual preppy lifestyle",
+        "logos_detected": [
+          "Abercrombie & Fitch logo with moose icon"
+        ],
+        "narrative_function": "product_showcase"
+      },
+      "api_tokens_used": 1434
+    },
+    {
+      "frame_id": "550e3ebfd71e61d58eaf881bca63a107",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 13,
+      "timestamp": "2025-10-26T04:03:59.975969",
+      "frame_path": "frames_storage\\550e3ebfd71e61d58eaf881bca63a107.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "13"
+          },
+          {
+            "similarity": 0.707,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "0"
+          },
+          {
+            "similarity": 0.69,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "9"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.503,
+          "change_type": "major_scene_change"
+        },
+        "narrative_position": "middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "person with natural hair",
+          "light colored clothing",
+          "indoor setting",
+          "warm lighting"
+        ],
+        "color_scheme": "warm tones, light blue/mint, brown",
+        "aesthetic_style": "casual, personal, documentary-style",
+        "logos_detected": [],
+        "narrative_function": "testimonial/personal_story"
+      },
+      "api_tokens_used": 1408
+    },
+    {
+      "frame_id": "7e2b9163e3e9310f9ac855c152d36697",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 15,
+      "timestamp": "2025-10-26T04:04:00.116823",
+      "frame_path": "frames_storage\\7e2b9163e3e9310f9ac855c152d36697.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 1.0,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "15"
+          },
+          {
+            "similarity": 0.807,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "41"
+          },
+          {
+            "similarity": 0.789,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "47"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.337,
+          "change_type": "major_scene_change"
+        },
+        "narrative_position": "middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": "Abercrombie & Fitch",
+        "product_name": "casual wear/hoodie and sweatpants",
+        "industry": "fashion/apparel",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "medium",
+        "visual_elements": [
+          "young person in casual wear",
+          "plaid background",
+          "relaxed sitting pose",
+          "sneakers",
+          "hoodie",
+          "sweatpants"
+        ],
+        "color_scheme": "teal/turquoise, white, plaid pattern with blues and reds",
+        "aesthetic_style": "casual lifestyle, youthful, comfortable, preppy",
+        "logos_detected": [
+          "Abercrombie & Fitch"
+        ],
+        "narrative_function": "product_showcase"
+      },
+      "api_tokens_used": 1469
+    },
+    {
+      "frame_id": "8fd77dfb6d354a983c7e67128f9ef970",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 18,
+      "timestamp": "2025-10-26T04:04:00.337243",
+      "frame_path": "frames_storage\\8fd77dfb6d354a983c7e67128f9ef970.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 1.0,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "18"
+          },
+          {
+            "similarity": 0.85,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "47"
+          },
+          {
+            "similarity": 0.848,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "49"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.263,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "late_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "fashion/clothing collection",
+        "industry": "fashion/apparel",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "three models",
+          "plaid blanket/rug",
+          "wooden paneled background",
+          "fur coat",
+          "plaid outerwear",
+          "sage green knitwear",
+          "white beanie",
+          "sneakers",
+          "chair",
+          "casual styling"
+        ],
+        "color_scheme": "warm earth tones, sage green, plaid patterns",
+        "aesthetic_style": "minimalist fashion editorial, cozy autumn/winter styling",
+        "logos_detected": [],
+        "narrative_function": "product_showcase"
+      },
+      "api_tokens_used": 1455
+    },
+    {
+      "frame_id": "2b1e675ab6f81063ca21fd70df1f3661",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 20,
+      "timestamp": "2025-10-26T04:04:00.489351",
+      "frame_path": "frames_storage\\2b1e675ab6f81063ca21fd70df1f3661.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.996,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "20"
+          },
+          {
+            "similarity": 0.861,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "22"
+          },
+          {
+            "similarity": 0.858,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "23"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.279,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "late_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": null,
+        "product_name": null,
+        "industry": "entertainment/film",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "silhouetted figure",
+          "dynamic movement",
+          "flowing hair",
+          "dramatic lighting",
+          "indoor setting",
+          "motion blur"
+        ],
+        "color_scheme": "muted greens and grays",
+        "aesthetic_style": "cinematic, dramatic, high-contrast silhouette",
+        "logos_detected": [],
+        "narrative_function": "dramatic_sequence"
+      },
+      "api_tokens_used": 1424
+    },
+    {
+      "frame_id": "3302ec24290048c0b2aed4fc53516ee1",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 22,
+      "timestamp": "2025-10-26T04:04:00.644402",
+      "frame_path": "frames_storage\\3302ec24290048c0b2aed4fc53516ee1.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "22"
+          },
+          {
+            "similarity": 0.846,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "20"
+          },
+          {
+            "similarity": 0.806,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "23"
+          }
+        ],
+        "visual_change": {
+          "change_detected": false,
+          "change_magnitude": 0.138,
+          "change_type": "minor_change"
+        },
+        "narrative_position": "late_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": null,
+        "product_name": null,
+        "industry": "unknown",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "blurred figure",
+          "motion blur",
+          "indoor setting",
+          "window frame",
+          "white walls",
+          "natural lighting"
+        ],
+        "color_scheme": "neutral tones, white, beige, soft lighting",
+        "aesthetic_style": "artistic motion blur, candid documentary style, soft natural lighting",
+        "logos_detected": [],
+        "narrative_function": "artistic transition or lifestyle moment"
+      },
+      "api_tokens_used": 1420
+    },
+    {
+      "frame_id": "1dc959bba6f80f38cc1a216ffc89612e",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 23,
+      "timestamp": "2025-10-26T04:04:00.726659",
+      "frame_path": "frames_storage\\1dc959bba6f80f38cc1a216ffc89612e.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.998,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "23"
+          },
+          {
+            "similarity": 0.87,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "24"
+          },
+          {
+            "similarity": 0.851,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "20"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.187,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "late_middle"
+      },
+      "marketing_signals": {
+        "brand_name_text": null,
+        "product_name": null,
+        "industry": "fashion/apparel",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": null,
+        "visual_elements": [
+          "person in hoodie",
+          "beanie/knit hat",
+          "casual wear",
+          "indoor setting",
+          "natural lighting",
+          "blurred/artistic effect"
+        ],
+        "color_scheme": "muted tones, grays, blues, soft lighting",
+        "aesthetic_style": "artistic, casual lifestyle, soft focus, intimate",
+        "logos_detected": [],
+        "narrative_function": "lifestyle_showcase"
+      },
+      "api_tokens_used": 1433
+    },
+    {
+      "frame_id": "f6942958310b3ce14c12703a32218a90",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 24,
+      "timestamp": "2025-10-26T04:04:00.807939",
+      "frame_path": "frames_storage\\f6942958310b3ce14c12703a32218a90.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "24"
+          },
+          {
+            "similarity": 0.863,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "23"
+          },
+          {
+            "similarity": 0.787,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "26"
+          }
+        ],
+        "visual_change": {
+          "change_detected": false,
+          "change_magnitude": 0.127,
+          "change_type": "minor_change"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": null,
+        "product_name": null,
+        "industry": "fashion/lifestyle",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "person in beanie",
+          "oversized jacket",
+          "light colored pants",
+          "white backdrop/sheets",
+          "natural lighting",
+          "motion blur"
+        ],
+        "color_scheme": "muted neutrals - whites, grays, navy",
+        "aesthetic_style": "minimalist, candid, film photography aesthetic with soft natural lighting",
+        "logos_detected": [],
+        "narrative_function": "lifestyle/mood conclusion"
+      },
+      "api_tokens_used": 1425
+    },
+    {
+      "frame_id": "df218a217b2948886bd346dd0e805648",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 26,
+      "timestamp": "2025-10-26T04:04:00.968805",
+      "frame_path": "frames_storage\\df218a217b2948886bd346dd0e805648.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "26"
+          },
+          {
+            "similarity": 0.783,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "24"
+          },
+          {
+            "similarity": 0.742,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "23"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.216,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "children's clothing/footwear",
+        "industry": "fashion/children's apparel",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "child model",
+          "blue knit beanie",
+          "white sweater",
+          "cardigan",
+          "jeans",
+          "yellow boots",
+          "dynamic shadows",
+          "studio lighting"
+        ],
+        "color_scheme": "soft blues, whites, cream, yellow accents",
+        "aesthetic_style": "minimalist studio photography with artistic shadow play",
+        "logos_detected": [],
+        "narrative_function": "lifestyle showcase/brand aesthetic conclusion"
+      },
+      "api_tokens_used": 1439
+    },
+    {
+      "frame_id": "7a5f7f7abb0a0d99bb1ac06871effda1",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 28,
+      "timestamp": "2025-10-26T04:04:01.123037",
+      "frame_path": "frames_storage\\7a5f7f7abb0a0d99bb1ac06871effda1.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "28"
+          },
+          {
+            "similarity": 0.855,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "29"
+          },
+          {
+            "similarity": 0.809,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "20"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.353,
+          "change_type": "major_scene_change"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "person in white beanie",
+          "motion blur",
+          "dark background",
+          "colorful elements at bottom",
+          "white clothing"
+        ],
+        "color_scheme": "white, dark/black background, hints of rainbow colors",
+        "aesthetic_style": "motion blur, artistic, dynamic movement",
+        "logos_detected": [],
+        "narrative_function": "conclusion"
+      },
+      "api_tokens_used": 1411
+    },
+    {
+      "frame_id": "a5839835cbb709bdb97ac9588faa402a",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 29,
+      "timestamp": "2025-10-26T04:04:01.202561",
+      "frame_path": "frames_storage\\a5839835cbb709bdb97ac9588faa402a.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "29"
+          },
+          {
+            "similarity": 0.851,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "28"
+          },
+          {
+            "similarity": 0.838,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "20"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.15,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "not clearly visible",
+        "product_name": "beanie/winter hat",
+        "industry": "fashion/apparel",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "person wearing white beanie",
+          "long blonde hair",
+          "white/light colored clothing",
+          "motion blur effect",
+          "indoor setting"
+        ],
+        "color_scheme": "white, beige, brown tones",
+        "aesthetic_style": "casual lifestyle, motion blur artistic effect, soft natural lighting",
+        "logos_detected": [],
+        "narrative_function": "lifestyle showcase/brand identity conclusion"
+      },
+      "api_tokens_used": 1432
+    },
+    {
+      "frame_id": "31ee90a4232a78a3fe6f5a7b48aa2beb",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 30,
+      "timestamp": "2025-10-26T04:04:01.282404",
+      "frame_path": "frames_storage\\31ee90a4232a78a3fe6f5a7b48aa2beb.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 1.0,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "30"
+          },
+          {
+            "similarity": 0.835,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "29"
+          },
+          {
+            "similarity": 0.803,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "20"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.164,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "lifestyle/fashion",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "young woman",
+          "white beanie",
+          "rainbow light effects",
+          "prismatic lighting",
+          "portrait shot",
+          "warm lighting"
+        ],
+        "color_scheme": "warm tones with rainbow prismatic effects",
+        "aesthetic_style": "dreamy, ethereal, artistic with rainbow light overlay effects",
+        "logos_detected": [],
+        "narrative_function": "conclusion"
+      },
+      "api_tokens_used": 1416
+    },
+    {
+      "frame_id": "a3e5e1e16ac98f344149280a5c01d8fc",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 31,
+      "timestamp": "2025-10-26T04:04:01.394987",
+      "frame_path": "frames_storage\\a3e5e1e16ac98f344149280a5c01d8fc.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 1.0,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "31"
+          },
+          {
+            "similarity": 0.8,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "30"
+          },
+          {
+            "similarity": 0.798,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "20"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.198,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "fashion/lifestyle",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "person in white clothing",
+          "interior vehicle setting",
+          "casual lifestyle photography",
+          "soft lighting"
+        ],
+        "color_scheme": "white, beige, soft pastels",
+        "aesthetic_style": "casual lifestyle, soft and natural lighting",
+        "logos_detected": [],
+        "narrative_function": "lifestyle showcase"
+      },
+      "api_tokens_used": 1405
+    },
+    {
+      "frame_id": "8246399e3750a066b75cc5a993154494",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 34,
+      "timestamp": "2025-10-26T04:04:01.618839",
+      "frame_path": "frames_storage\\8246399e3750a066b75cc5a993154494.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 1.0,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "34"
+          },
+          {
+            "similarity": 0.805,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "23"
+          },
+          {
+            "similarity": 0.786,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "15"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.245,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "children's clothing/hoodie",
+        "industry": "fashion/children's apparel",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "child in blue hoodie",
+          "crouching pose",
+          "red cushioned bench",
+          "wooden legs",
+          "sneakers",
+          "hood up",
+          "minimalist background"
+        ],
+        "color_scheme": "teal blue, red, neutral beige",
+        "aesthetic_style": "minimalist, lifestyle photography, soft lighting, casual comfortable aesthetic",
+        "logos_detected": [],
+        "narrative_function": "lifestyle showcase/brand story conclusion"
+      },
+      "api_tokens_used": 1441
+    },
+    {
+      "frame_id": "6ba19d5e015dc24040c082ff518882cf",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 36,
+      "timestamp": "2025-10-26T04:04:01.767203",
+      "frame_path": "frames_storage\\6ba19d5e015dc24040c082ff518882cf.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "36"
+          },
+          {
+            "similarity": 0.782,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "31"
+          },
+          {
+            "similarity": 0.777,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "24"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.294,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "fashion/lifestyle",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "person in white clothing",
+          "purple/magenta hat",
+          "striped bag/accessory",
+          "polaroid-style frame",
+          "dreamy cloud background",
+          "full body pose"
+        ],
+        "color_scheme": "soft blues, whites, purples, magenta accents",
+        "aesthetic_style": "dreamy polaroid photography, vintage film aesthetic, ethereal clouds backdrop",
+        "logos_detected": [],
+        "narrative_function": "lifestyle/mood conclusion"
+      },
+      "api_tokens_used": 1437
+    },
+    {
+      "frame_id": "9d72e262b23de6dbfe302ce413d5e179",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 39,
+      "timestamp": "2025-10-26T04:04:01.980141",
+      "frame_path": "frames_storage\\9d72e262b23de6dbfe302ce413d5e179.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "39"
+          },
+          {
+            "similarity": 0.856,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "40"
+          },
+          {
+            "similarity": 0.769,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "36"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.235,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "shopping bag",
+        "industry": "retail/fashion",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "striped shopping bag",
+          "white sneakers",
+          "legs in white socks",
+          "white/mint colored clothing",
+          "bag handles"
+        ],
+        "color_scheme": "white, mint green, burgundy, navy stripes",
+        "aesthetic_style": "clean, minimalist, lifestyle-focused",
+        "logos_detected": [],
+        "narrative_function": "conclusion"
+      },
+      "api_tokens_used": 1420
+    },
+    {
+      "frame_id": "23498b06a7f7722605067b819033ff2e",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 40,
+      "timestamp": "2025-10-26T04:04:02.061887",
+      "frame_path": "frames_storage\\23498b06a7f7722605067b819033ff2e.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "40"
+          },
+          {
+            "similarity": 0.853,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "39"
+          },
+          {
+            "similarity": 0.681,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "36"
+          }
+        ],
+        "visual_change": {
+          "change_detected": false,
+          "change_magnitude": 0.149,
+          "change_type": "minor_change"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "abercrombie kids",
+        "product_name": "children's clothing and accessories",
+        "industry": "fashion/retail",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "high",
+        "visual_elements": [
+          "plaid shopping bag",
+          "white sneakers",
+          "light blue dress",
+          "white handles",
+          "person carrying bag"
+        ],
+        "color_scheme": "pink, purple, teal plaid pattern with white accents",
+        "aesthetic_style": "clean, youthful, preppy casual style with bright plaid branding",
+        "logos_detected": [
+          "abercrombie kids"
+        ],
+        "narrative_function": "brand reinforcement/lifestyle showcase"
+      },
+      "api_tokens_used": 1443
+    },
+    {
+      "frame_id": "f2835f5f8744674caef98a9c4931fb31",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 41,
+      "timestamp": "2025-10-26T04:04:02.147266",
+      "frame_path": "frames_storage\\f2835f5f8744674caef98a9c4931fb31.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "41"
+          },
+          {
+            "similarity": 0.804,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "15"
+          },
+          {
+            "similarity": 0.802,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "1"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.401,
+          "change_type": "major_scene_change"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "NY",
+        "product_name": "New York Yankees merchandise/apparel",
+        "industry": "sports merchandise/fashion",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "high",
+        "visual_elements": [
+          "child wearing NY Yankees cap",
+          "curly hair",
+          "white shirt",
+          "hand gesture",
+          "smiling face"
+        ],
+        "color_scheme": "navy blue, white, neutral skin tones",
+        "aesthetic_style": "casual lifestyle photography with natural lighting",
+        "logos_detected": [
+          "New York Yankees NY logo"
+        ],
+        "narrative_function": "emotional connection/lifestyle showcase"
+      },
+      "api_tokens_used": 1436
+    },
+    {
+      "frame_id": "4a50972d99f2f1e96c587eb156d7321d",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 44,
+      "timestamp": "2025-10-26T04:04:02.370547",
+      "frame_path": "frames_storage\\4a50972d99f2f1e96c587eb156d7321d.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "44"
+          },
+          {
+            "similarity": 0.855,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "47"
+          },
+          {
+            "similarity": 0.827,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "0"
+          }
+        ],
+        "visual_change": {
+          "change_detected": true,
+          "change_magnitude": 0.22,
+          "change_type": "moderate_transition"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "fashion/apparel",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "three young people",
+          "winter clothing",
+          "white pom-pom beanie",
+          "checkered scarf",
+          "white fur-lined jacket",
+          "group photo",
+          "warm lighting"
+        ],
+        "color_scheme": "warm orange/peach background, white, black, plaid pattern",
+        "aesthetic_style": "casual lifestyle photography with warm, friendly atmosphere",
+        "logos_detected": [],
+        "narrative_function": "lifestyle showcase"
+      },
+      "api_tokens_used": 1433
+    },
+    {
+      "frame_id": "0280494c43676ef09933055ec728ea96",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 47,
+      "timestamp": "2025-10-26T04:04:02.597140",
+      "frame_path": "frames_storage\\0280494c43676ef09933055ec728ea96.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "47"
+          },
+          {
+            "similarity": 0.891,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "49"
+          },
+          {
+            "similarity": 0.86,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "44"
+          }
+        ],
+        "visual_change": {
+          "change_detected": false,
+          "change_magnitude": 0.145,
+          "change_type": "minor_change"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "JORDAN",
+        "product_name": "Jordan apparel/clothing",
+        "industry": "athletic apparel/fashion",
+        "promo_present": false,
+        "promo_text": null,
+        "promo_deadline": null,
+        "price_value": null,
+        "cta_present": false,
+        "cta_type": null,
+        "text_density": "low",
+        "brand_text_contrast": "medium",
+        "visual_elements": [
+          "two young women dancing",
+          "motion blur",
+          "casual wear",
+          "beanie hat",
+          "long hair",
+          "wooden background",
+          "sweatshirt with logo"
+        ],
+        "color_scheme": "warm neutral tones with cream and beige",
+        "aesthetic_style": "casual lifestyle photography with dynamic movement and youthful energy",
+        "logos_detected": [
+          "Jordan"
+        ],
+        "narrative_function": "lifestyle showcase demonstrating brand connection to youth culture and movement"
+      },
+      "api_tokens_used": 1444
+    },
+    {
+      "frame_id": "c1a1e8787b99b69fb19f8ae2e632d44f",
+      "source_path": "data\\videos\\v0005.mp4",
+      "frame_index": 49,
+      "timestamp": "2025-10-26T04:04:02.757308",
+      "frame_path": "frames_storage\\c1a1e8787b99b69fb19f8ae2e632d44f.jpg",
+      "frame_type": "visually_complex",
+      "embedding_context": {
+        "similar_frames": [
+          {
+            "similarity": 0.999,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "49"
+          },
+          {
+            "similarity": 0.892,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "47"
+          },
+          {
+            "similarity": 0.855,
+            "source": "data\\videos\\v0005.mp4",
+            "frame_index": "18"
+          }
+        ],
+        "visual_change": {
+          "change_detected": false,
+          "change_magnitude": 0.106,
+          "change_type": "minor_change"
+        },
+        "narrative_position": "conclusion"
+      },
+      "marketing_signals": {
+        "brand_name_text": "",
+        "product_name": "",
+        "industry": "",
+        "promo_present": false,
+        "promo_text": "",
+        "promo_deadline": "",
+        "price_value": "",
+        "cta_present": false,
+        "cta_type": "",
+        "text_density": "low",
+        "brand_text_contrast": "low",
+        "visual_elements": [
+          "person in olive/green jacket",
+          "plaid fabric pattern",
+          "wooden cabinet/furniture",
+          "motion blur",
+          "indoor setting"
+        ],
+        "color_scheme": "warm earth tones, olive green, wood brown",
+        "aesthetic_style": "casual lifestyle, natural lighting, motion blur effect",
+        "logos_detected": [],
+        "narrative_function": "lifestyle_scene"
+      },
+      "api_tokens_used": 1407
+    }
+  ],
+  "marketing_insights": {
+    "brands_detected": [
+      "not clearly visible",
+      "not visible",
+      "abercrombie kids",
+      "JORDAN",
+      "NY",
+      "Abercrombie & Fitch"
+    ],
+    "products_detected": [
+      "New York Yankees merchandise/apparel",
+      "children's clothing and accessories",
+      "casual wear/hoodie and sweatpants",
+      "beanie/winter hat",
+      "fashion/clothing collection",
+      "not clearly identifiable",
+      "children's clothing/footwear",
+      "children's clothing/hoodie",
+      "shopping bag",
+      "Jordan apparel/clothing",
+      "clothing/apparel"
+    ],
+    "industries": [
+      "fashion/children's apparel",
+      "fashion/retail",
+      "entertainment/film",
+      "lifestyle/fashion",
+      "retail/fashion",
+      "healthcare/medical",
+      "lifestyle/social",
+      "athletic apparel/fashion",
+      "unknown",
+      "sports merchandise/fashion",
+      "fashion/apparel",
+      "fashion/lifestyle"
+    ],
+    "aesthetic_styles": [
+      "casual lifestyle, motion blur artistic effect, soft natural lighting",
+      "clean, minimalist, lifestyle-focused",
+      "casual minimalist clothing branding",
+      "cinematic, dramatic, high-contrast silhouette",
+      "artistic, casual lifestyle, soft focus, intimate",
+      "minimalist studio photography with artistic shadow play",
+      "casual lifestyle, natural lighting, motion blur effect",
+      "motion blur, artistic, dynamic movement",
+      "minimalist abstract gradient with soft transitions",
+      "casual lifestyle, soft and natural lighting",
+      "casual family photography with soft lighting",
+      "casual youth lifestyle, slightly blurred/candid photography",
+      "clinical, professional medical environment",
+      "casual lifestyle photography with natural lighting",
+      "candid lifestyle photography with soft focus",
+      "minimalist, lifestyle photography, soft lighting, casual comfortable aesthetic",
+      "minimalist, candid, film photography aesthetic with soft natural lighting",
+      "casual lifestyle photography with warm, friendly atmosphere",
+      "dreamy polaroid photography, vintage film aesthetic, ethereal clouds backdrop",
+      "minimalist fashion editorial, cozy autumn/winter styling",
+      "artistic motion blur, candid documentary style, soft natural lighting",
+      "casual preppy lifestyle",
+      "clean, youthful, preppy casual style with bright plaid branding",
+      "casual lifestyle, youthful, comfortable, preppy",
+      "dreamy, ethereal, artistic with rainbow light overlay effects",
+      "casual, candid, youthful lifestyle photography",
+      "casual lifestyle photography with dynamic movement and youthful energy",
+      "casual lifestyle photography with soft lighting",
+      "casual, personal, documentary-style"
+    ],
+    "top_visual_elements": [
+      {
+        "element": "indoor setting",
+        "count": 10
+      },
+      {
+        "element": "motion blur",
+        "count": 7
+      },
+      {
+        "element": "casual clothing",
+        "count": 4
+      },
+      {
+        "element": "warm lighting",
+        "count": 3
+      },
+      {
+        "element": "sneakers",
+        "count": 3
+      },
+      {
+        "element": "natural lighting",
+        "count": 3
+      },
+      {
+        "element": "two young people",
+        "count": 2
+      },
+      {
+        "element": "striped shirt",
+        "count": 2
+      },
+      {
+        "element": "baseball cap",
+        "count": 2
+      },
+      {
+        "element": "brand logo",
+        "count": 2
+      }
+    ]
+  }
+}
