@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'audio_processing'))
 from human_detection_agent.human_detector import SimpleHumanDetector
 from audio_processing_agent.audio_processor import analyze_video_audio
 from video_orc_agent_main import EnhancedVisionOrchestrator
-from img_orc_agent import ImageFeatureExtractor
+from img_orc_agent_main import ImageFeatureExtractor
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for React frontend on localhost:3000
