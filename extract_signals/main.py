@@ -32,6 +32,20 @@ def get_signals(text):
 
 Text: {text}
 
+Instructions:
+- brand_name_text: The brand/company name
+- product_name: The specific product or service being advertised
+- industry: The business category
+- promo_present: true if there's a promotional offer, false otherwise
+- promo_text: ONLY the core offer itself (e.g., "1¢ to join & get 1 month free", "Buy one get one free", "50% off"), NOT the full sentence or description
+- promo_deadline: Time limit for the offer (e.g., "48 hours", "ends today", "limited time")
+- price_value: Specific price mentioned (e.g., "$9.99/mo", "$0.01 down")
+- cta_present: true if there's a call-to-action button/text, false otherwise
+- cta_type: The action requested (e.g., "Sign up button", "Order now", "Learn more")
+- text_density: "low" (minimal text), "medium" (moderate text), "high" (lots of text)
+- brand_text_contrast: "low", "medium", or "high" - how much the brand name stands out visually
+
+Return format:
 {{
     "brand_name_text": "",
     "product_name": "",
