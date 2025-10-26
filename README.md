@@ -76,3 +76,11 @@ python3 test_module3.py
 ## Contributing
 
 This project was developed for CalHacks 12. Feel free to fork and contribute improvements!
+
+### Server Lifecycle
+
+1. Start: ./server.sh start
+2. Use: React app → http://localhost:5001/api
+3. Stop: ./server.sh stop
+4. ./server.sh status Check if running
+5. ./server.sh restart Restart server
