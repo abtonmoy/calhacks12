@@ -1,133 +1,103 @@
-# CalHacks 12 - Human Detection & Audio Analysis System
+# CalHacks 12 - Marketing Signal Detection System
 
-This repository contains a complete system for human detection in images and audio analysis in videos, developed for CalHacks 12.
+This repository contains a comprehensive AI-powered system for extracting marketing signals, promotional content, and brand information from videos and images.
 
-## Features
+## 🎯 Overview
 
-- **Advanced Human Detection**: Multi-method face detection using OpenCV Haar cascades and MediaPipe
-- **Audio Emotion Recognition**: Emotion detection from video audio using HuBERT
-- **Flask API Server**: RESTful API for React/TypeScript frontend integration
-- **Fast Processing**: Optimized for speed with minimal dependencies
-- **Accurate Detection**: Combines multiple detection methods for better accuracy
-- **Clean Architecture**: Simplified, maintainable codebase
+This system processes video files and images to extract rich marketing intelligence including:
 
-## Installation
+- **Visual Analysis**: Brand names, products, promotional offers, CTAs
+- **Audio Analysis**: Voice characteristics, emotion detection, audio sentiment
+- **Human Detection**: Presence of people in frames
+- **Text Extraction**: OCR for images, visual text detection for videos
+- **Promotional Intelligence**: Promo codes, deadlines, discount types
+
+## 🚀 Quick Start
+
+### Installation
 
 ```bash
-# Install all dependencies
+# Install dependencies
 pip install -r requirements.txt
 
 # Install FFmpeg (macOS)
 brew install ffmpeg
+
+# Create .env file with your Anthropic API key
+echo "ANTHROPIC_API_KEY=your_key_here" > .env
 ```
 
-## API Server Setup
-
-### Start the API Server
+### Run the Flask API Server
 
 ```bash
-# Use the helper script
+# Start the server
 ./server.sh start
 
-# OR manually
-python3 api_server.py
+# Server runs on http://localhost:5001
 ```
-
-Server runs on `http://localhost:5001`
 
 ### API Endpoints
 
-- **POST** `/api/detect-human` - Detect humans in uploaded image
-- **POST** `/api/analyze-audio` - Analyze audio from uploaded video
-- **GET** `/api/health` - Health check endpoint
+- `POST /api/detect-human` - Simple human detection in images
+- `POST /api/analyze-image` - Full image analysis (OCR + Claude API)
+- `POST /api/analyze-audio` - Audio emotion analysis
+- `POST /api/analyze-video` - Complete video analysis (Visual + Audio)
+- `GET /api/health` - Health check
 
-See `API_SETUP.md` for detailed documentation.
+## 📦 Components
 
-## Usage
+### Video Processing Pipeline
 
-### Human Detection (CLI)
+- **Frame Deduplication**: ChromaDB with CLIP embeddings
+- **Vision Analysis**: Claude Vision API
+- **Audio Analysis**: HuBERT emotion recognition
+- **Human Detection**: OpenCV + MediaPipe
 
-```bash
-python3 findHuman_agent/human_detector.py image.jpg
-```
+### Image Processing Pipeline
 
-Output:
+- **Human Detection**: OpenCV Haar Cascades
+- **Text Extraction**: EasyOCR
+- **Signal Extraction**: Claude API
+
+## 📊 Output Format
+
+### Image Analysis Response
 
 ```json
 {
   "human_present": 1,
-  "num_people": 6
+  "num_people": 3,
+  "extracted_text": "50% OFF SALE",
+  "brand_name_text": "BrandName",
+  "promo_present": true,
+  "promo_text": "50% OFF SALE",
+  "promo_code": "SAVE50",
+  "price_value": "50%",
+  "cta_present": true,
+  "cta_type": "shop_now"
 }
 ```
 
-### Audio Processing (CLI)
+### Video Analysis Response
 
-```bash
-python3 audio_processing/audio_processor.py video.mp4
-```
+See `API_ENDPOINTS.md` for complete video analysis format.
 
-Output:
+## 📖 Documentation
 
-```json
-{
-  "duration_sec": 15.03,
-  "gender_estimation": "female",
-  "mean_pitch": 226.96,
-  "spectral_bandwidth": 2021.3,
-  "emotion": "happy"
-}
-```
+- `API_ENDPOINTS.md` - Complete API documentation
+- `SERVER_CONTROLS.md` - Server management guide
+- `video_orc_agent_main.py` - Video processing agent
+- `img_orc_agent.py` - Image processing agent
 
-### React Frontend Integration
+## 🎯 Use Cases
 
-See `frontend_example/APIExample.tsx` for a complete React/TypeScript component example.
+- Marketing campaign analysis
+- Competitive intelligence
+- Promotional code extraction
+- Brand monitoring
+- Content audit
+- Sentiment analysis
 
-## Project Structure
-
-```
-├── api_server.py                    # Flask API server
-├── server.sh                        # Server management script
-├── findHuman_agent/
-│   └── human_detector.py            # Human detection module
-├── audio_processing/
-│   └── audio_processor.py           # Audio analysis module
-├── requirements.txt                 # Dependencies
-├── API_SETUP.md                     # API documentation
-├── SERVER_CONTROLS.md              # Server management guide
-└── ORCHESTRATION_ANALYSIS.md       # Architecture analysis
-```
-
-## Dependencies
-
-- opencv-python==4.8.1.78
-- numpy==1.24.3
-- mediapipe>=0.10.5
-- ffmpeg-python
-- librosa
-- torch
-- soundfile
-- transformers
-- flask
-- flask-cors
-
-## Documentation
-
-- `API_SETUP.md` - Complete API setup and usage guide
-- `SERVER_CONTROLS.md` - How to start/stop/restart the server
-- `ORCHESTRATION_ANALYSIS.md` - Architecture and design decisions
-- `TEST_RESULTS.md` - Test results and validation
-
-## Performance
-
-- **Human Detection**: ~0.1-0.2 seconds per image
-- **Audio Analysis**: 30-60 seconds per video (depending on length)
-- **Accuracy**: Multi-method detection with duplicate removal
-- **Memory**: Minimal footprint with optimized dependencies
-
-## Contributing
-
-This project was developed for CalHacks 12. Feel free to fork and contribute improvements!
-
-## License
+## 📝 License
 
 MIT License

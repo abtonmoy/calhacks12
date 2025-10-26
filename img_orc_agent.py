@@ -16,7 +16,7 @@ import numpy as np
 from dotenv import load_dotenv
 
 # Import existing modules
-from findHuman_agent.human_detector import SimpleHumanDetector
+from human_detection_agent.human_detector import SimpleHumanDetector
 from extract_signals.main import get_signals
 
 
