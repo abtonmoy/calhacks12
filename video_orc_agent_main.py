@@ -22,7 +22,7 @@ from PIL import Image
 import cv2
 
 from deduplication_agent.pipeline import VisualDeduplicationPipeline
-from findHuman_agent.human_detector import SimpleHumanDetector
+from human_detection_agent.human_detector import SimpleHumanDetector
 
 
 class EmbeddingContextAnalyzer:
