@@ -71,11 +71,7 @@ class SimpleHumanDetector:
         # Prepare results
         result = {
             "human_present": 1 if len(unique_faces) > 0 else 0,
-            "num_people": len(unique_faces),
-            "face_boxes": unique_faces,
-            "total_faces": len(unique_faces),
-            "image_path": image_path,
-            "image_size": [image.shape[1], image.shape[0]]  # [width, height]
+            "num_people": len(unique_faces)
         }
         
         return result
@@ -143,9 +139,7 @@ def main():
         error_result = {
             "error": str(e),
             "human_present": 0,
-            "num_people": 0,
-            "face_boxes": [],
-            "total_faces": 0
+            "num_people": 0
         }
         print(json.dumps(error_result, indent=2))
         sys.exit(1)
