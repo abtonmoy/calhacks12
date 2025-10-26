@@ -13,6 +13,18 @@ from transformers import AutoFeatureExtractor, AutoModelForAudioClassification
 # =========================================================
 os.environ["PATH"] += os.pathsep + r"C:\ffmpeg-8.0-essentials_build\ffmpeg-8.0-essentials_build\bin"
 
+# Emotion mapping from model abbreviations to full names
+EMOTION_MAPPING = {
+    "hap": "happy",
+    "sad": "sad", 
+    "ang": "angry",
+    "neu": "neutral",
+    "exc": "excited",
+    "fru": "frustrated",
+    "fea": "fearful",
+    "dis": "disgusted"
+}
+
 # =========================================================
 # UTILITY: Safe audio load using soundfile + resample
 # =========================================================
@@ -87,8 +99,11 @@ def analyze_audio_sentiment(audio_path):
         probs = torch.nn.functional.softmax(logits, dim=-1)[0].numpy()
         predicted_id = np.argmax(probs)
         label = model.config.id2label[predicted_id]
+        
+        # Map abbreviation to full emotion name
+        full_emotion = EMOTION_MAPPING.get(label, label)
 
-    return {"predicted_emotion": label}
+    return {"predicted_emotion": full_emotion}
 
 # =========================================================
 # STEP 4: Combine Results
