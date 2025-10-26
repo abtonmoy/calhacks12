@@ -1585,5 +1585,3 @@ rm -rf ~/.cache/huggingface/
 **Contact**: support@yourproject.com
 
 ---
-
-🎉 **You're all set! Start analyzing your marketing content today!**
