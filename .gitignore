@@ -132,3 +132,11 @@ deduplication_agent/frames_storage
 deduplication_agent/pipeline_v1.py
 deduplication_agent/pipeline_v2.py
 audio_temp/
+test.py
+test1.py
+test2.py
+test3.py
+video_orc_agent.py
+my_results/
+frames_storage/
+chroma_visual_db/
