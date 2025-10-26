@@ -281,8 +281,8 @@ ffmpeg -version
 
 ```bash
 # If using git
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/abtonmoy/calhacks12.git
+cd calhacks12
 
 # Or download and extract ZIP
 ```
