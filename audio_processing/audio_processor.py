@@ -4,6 +4,8 @@ import librosa
 import numpy as np
 import torch
 import soundfile as sf
+import json
+import sys
 from transformers import AutoFeatureExtractor, AutoModelForAudioClassification
 
 # =========================================================
@@ -34,7 +36,6 @@ def extract_audio_from_video(video_path, output_dir="audio_temp"):
     os.makedirs(output_dir, exist_ok=True)
     audio_path = os.path.join(output_dir, os.path.basename(video_path).replace(".mp4", ".wav"))
 
-    print(" Extracting audio track...")
     (
         ffmpeg
         .input(video_path)
@@ -48,8 +49,6 @@ def extract_audio_from_video(video_path, output_dir="audio_temp"):
 # STEP 2: Extract Required Audio Features
 # =========================================================
 def extract_audio_features(audio_path):
-    print(" Computing selected audio features...")
-
     # Load audio safely
     y, sr = safe_load_audio(audio_path, sr=16000)
     duration = len(y) / sr
@@ -75,7 +74,6 @@ def extract_audio_features(audio_path):
 def analyze_audio_sentiment(audio_path):
     model_name = "superb/hubert-base-superb-er"  # pretrained on IEMOCAP emotions
 
-    print(" Loading emotion recognition model (first run may take 1–2 minutes)...")
     extractor = AutoFeatureExtractor.from_pretrained(model_name)
     model = AutoModelForAudioClassification.from_pretrained(model_name)
 
@@ -90,33 +88,67 @@ def analyze_audio_sentiment(audio_path):
         predicted_id = np.argmax(probs)
         label = model.config.id2label[predicted_id]
 
-    print(f" Predicted Emotion: {label}")
     return {"predicted_emotion": label}
 
 # =========================================================
 # STEP 4: Combine Results
 # =========================================================
 def analyze_video_audio(video_path):
-    print(f"\n Processing video: {os.path.basename(video_path)}")
-    audio_path = extract_audio_from_video(video_path)
-
-    features = extract_audio_features(audio_path)
-    sentiment = analyze_audio_sentiment(audio_path)
-
-    results = {**features, **sentiment}
-
-    print("\n Final Audio Analysis Results:")
-    for k, v in results.items():
-        print(f"  {k}: {v}")
-
-    return results
+    """Analyze video audio and return JSON results"""
+    try:
+        audio_path = extract_audio_from_video(video_path)
+        features = extract_audio_features(audio_path)
+        sentiment = analyze_audio_sentiment(audio_path)
+        
+        # Combine results into clean JSON format
+        results = {
+            "duration_sec": features["duration_sec"],
+            "gender_estimation": features["gender_est"],
+            "mean_pitch": features["mean_pitch"],
+            "spectral_bandwidth": features["spectral_bandwidth"],
+            "emotion": sentiment["predicted_emotion"]
+        }
+        
+        return results
+        
+    except Exception as e:
+        return {
+            "error": str(e),
+            "duration_sec": 0,
+            "gender_estimation": "unknown",
+            "mean_pitch": 0,
+            "spectral_bandwidth": 0,
+            "emotion": "unknown"
+        }
 
 # =========================================================
-# STEP 5: Run Script
+# STEP 5: Command Line Interface
 # =========================================================
-if __name__ == "__main__":
-    video_path = r".\data\videos\v0002.mp4"  # Change path if needed
+def main():
+    """Main function for command line usage"""
+    if len(sys.argv) != 2:
+        print("Usage: python3 audio_processor.py <video_path>")
+        print("Example: python3 audio_processor.py video.mp4")
+        sys.exit(1)
+    
+    video_path = sys.argv[1]
+    
     if not os.path.exists(video_path):
-        print(" Please provide a valid .mp4 video path.")
-    else:
-        analyze_video_audio(video_path)
+        error_result = {
+            "error": f"Video file not found: {video_path}",
+            "duration_sec": 0,
+            "gender_estimation": "unknown",
+            "mean_pitch": 0,
+            "spectral_bandwidth": 0,
+            "emotion": "unknown"
+        }
+        print(json.dumps(error_result, indent=2))
+        sys.exit(1)
+    
+    # Analyze video and output JSON
+    result = analyze_video_audio(video_path)
+    print(json.dumps(result, indent=2))
+
+
+if __name__ == "__main__":
+    main()
