@@ -44,6 +44,7 @@ Instructions:
 - cta_type: The action requested (e.g., "Sign up button", "Order now", "Learn more")
 - text_density: "low" (minimal text), "medium" (moderate text), "high" (lots of text)
 - brand_text_contrast: "low", "medium", or "high" - how much the brand name stands out visually
+- is_nsfw: true if the content contains explicit sexual content, graphic violence, or other not-safe-for-work material, false otherwise
 
 Return format:
 {{
@@ -57,7 +58,8 @@ Return format:
     "cta_present": true/false,
     "cta_type": "",
     "text_density": "low/medium/high",
-    "brand_text_contrast": "low/medium/high"
+    "brand_text_contrast": "low/medium/high",
+    "is_nsfw": true/false
 }}"""
         }]
     )

@@ -18,8 +18,8 @@ import numpy as np
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'findHuman_agent'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'audio_processing'))
 
-from human_detector import SimpleHumanDetector
-import audio_processor
+from human_detection_agent.human_detector import SimpleHumanDetector
+from audio_processing_agent.audio_processor import analyze_video_audio
 from video_orc_agent_main import EnhancedVisionOrchestrator
 from img_orc_agent import ImageFeatureExtractor
 
@@ -170,7 +170,7 @@ def analyze_audio():
         file.save(filepath)
         
         # Analyze audio
-        result = audio_processor.analyze_video_audio(filepath)
+        result = analyze_video_audio(filepath)
         
         # Clean up uploaded file
         os.remove(filepath)
