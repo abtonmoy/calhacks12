@@ -1582,6 +1582,6 @@ rm -rf ~/.cache/huggingface/
 
 **Version**: 1.0  
 **Last Updated**: October 2025  
-**Contact**: support@yourproject.com
+**Contact**: abdulbasittonmoy@gmail.com
 
 ---
