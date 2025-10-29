@@ -1,4 +1,4 @@
-# CalHacks 12
+# CalHacks 12 AppLovin Ad Intelligence Challenge Winner
 
 # ADLOVIN : Marketing Signal Detection System
 
